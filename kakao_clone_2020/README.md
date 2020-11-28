@@ -1,3 +1,3 @@
-#KAKAO CLONE 2020 UPDATE ( nomad coder )
+# Kokoa clone ( kakao clone) 2020 UPDATE ( nomad coder )
 
-CSS + Html
+CSS + Html ( front end )
