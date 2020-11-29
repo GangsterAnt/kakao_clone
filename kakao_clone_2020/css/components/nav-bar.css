@@ -1,0 +1,26 @@
+.nav
+{
+	background-color: #f9f9fa;
+	padding: 20px 50px;
+	border-top: 1px solid rgba(121, 121, 121, 0.3);
+
+	/* 바닥에 고정*/
+	position:fixed;
+	bottom: 0px;
+	width: 100%;
+
+	/* 패딩때문에 박스 사이즈를 늘리지 않도록 처리*/
+	box-sizing: border-box;
+}
+
+.nav__list
+{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nav__link
+{
+	color: #2e363e;
+}

@@ -1,11 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
-@import "./reset.css";
-@import "./components/status-bar.css";
-@import "./variable.css";
-@import "./screens/login.css";
 
+@import "./reset.css";
+@import "./variable.css";
+
+@import "./components/status-bar.css";
+@import "./components/nav-bar.css";
+
+@import "./screens/login.css";
 
 /*	global setting 을 위한것들만 style .css 에 남겨놓는게 organized 하다.*/
 body{
 	font-family: 'Ubuntu', sans-serif;
+	height: 500vh;
 }

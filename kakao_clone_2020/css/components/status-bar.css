@@ -2,6 +2,12 @@
 	display: flex;
 	justify-content: center;
 	padding: 5px 3px;
+
+	/*천장에 고정*/
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 /* CSS hack to center

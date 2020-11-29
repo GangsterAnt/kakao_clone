@@ -47,6 +47,12 @@ table {
 	border-spacing: 0;
 }
 
+/* 모든 입력창은 focus 시 외곽선이 필요없다.*/
 input:focus{
 	outline: none;
+}
+
+/* 모든 하이퍼링크는 부모 색을 물려받는다.*/
+a{
+	color: inherit;
 }
