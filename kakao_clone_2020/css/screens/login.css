@@ -1,0 +1,81 @@
+/* BEM Styles*/
+
+.welcome-header{
+	margin: 90px 0px;
+	text-align: center;
+	display: flex;
+	/*	welcome-header 클래스는 item들을 세로로, 가운데 정렬할것이다.	*/
+	flex-direction: column;
+	align-items: center;
+}
+
+.welcome-header__title{
+	font-size: 25px;
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 5%;
+
+}
+
+.welcome-header__title__ver{
+	font-size: 10px;
+	opacity: 0.7;
+
+	margin-top: 15px;
+}
+
+.welcome-header__text{
+	/* 전체 박스의 50% 만큼만 사용하겠다.*/
+	width: 60%;
+	opacity: 0.7;
+}
+
+.login-form
+{
+	display: flex;
+	flex-direction: column;
+	margin: 0px 30px;
+}
+
+.login-form input
+{
+	padding:15px 0px;
+	border: none;
+	font-size: 18px;
+	margin-bottom: 25px;
+}
+
+/* NOT BEM Style  */
+/* type="submit" 은 bottom 경계선과 transition 이 들어가지 않을 것이다.*/
+.login-form input:not([type="submit"])
+{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	transition: border-color 0.2s ease-in-out ;
+}
+
+.login-form input::placeholder
+{
+	color:rgba(0, 0, 0, 0.4);
+}
+
+.login-form input:focus
+{	/* border 가 없는 type="submit" 에게는 적용되지 않을것이다만
+		css 상으로는 컴파일? 되는것. 단지 눈에 안보인다.*/
+	border-color:var(--kakao_yellow);
+}
+
+.login-form input[type="submit"]
+{
+	background-color: var(--kakao_yellow);
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 5px;
+}
+
+.login-form a
+{
+	text-align: center;
+	text-decoration: none;
+	color: inherit;
+	font-size: 14px;
+}

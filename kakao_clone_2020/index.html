@@ -49,9 +49,10 @@
 			If you have Kakao Account, Please log-in with your Account or Phone number :)
 		</p>
 	</header>
-	<form class="login-form">
-		<input type="text" placeholder="Email or Phone number" />
-		<input type="password" placeholder="Password" />
+	<!-- html 에서 다른 html 로 이동한다 action friends method = get ( not post  because we dont have any server) -->
+	<form class="login-form" action="friends.html" method="get">
+		<input name="usrname" type="text" placeholder="Email or Phone number" />
+		<input name="password" type="password" placeholder="Password" />
 		<input type="submit" value="Log In" />
 
 		<a href="#">Find Kakao Account / PassWord</a>
